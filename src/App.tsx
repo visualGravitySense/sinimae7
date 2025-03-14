@@ -6,6 +6,9 @@ import { lightTheme, darkTheme } from "./theme";
 
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -22,6 +25,15 @@ function App() {
   
   return (
     <>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </Router>
+
+      <QueryClientProvider client={queryClient}>
+        <div>ТСЖ сайт</div>
+      </QueryClientProvider>
       
       <ThemeProvider theme={theme}>
         <GlobalStyle />
