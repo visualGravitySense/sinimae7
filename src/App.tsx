@@ -25,22 +25,19 @@ function App() {
   
   return (
     <>
-      <Router>
-        <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes>
-      </Router>
-
       <QueryClientProvider client={queryClient}>
-        <div>ТСЖ сайт</div>
-      </QueryClientProvider>
-      
       <ThemeProvider theme={theme}>
         <GlobalStyle />
-          <button onClick={() => setTheme(theme === lightTheme ? darkTheme : lightTheme)}>
-            Переключить тему
-          </button>
-    </ThemeProvider>
+        <Router>
+          <Routes>
+            <Route path="/" element={<Home />} />
+          </Routes>
+        </Router>
+        <button onClick={() => setTheme(theme === lightTheme ? darkTheme : lightTheme)}>
+          Переключить тему
+        </button>
+      </ThemeProvider>
+    </QueryClientProvider>
     </>
   );
 }
