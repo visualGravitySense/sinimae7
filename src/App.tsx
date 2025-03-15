@@ -7,7 +7,9 @@ import { lightTheme, darkTheme } from "./theme";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import Home from "./pages/Home";
+import AboutUs from './pages/AboutUs';
 
 
 const GlobalStyle = createGlobalStyle`
@@ -15,6 +17,8 @@ const GlobalStyle = createGlobalStyle`
     background: ${(props) => props.theme.colors.background};
     color: ${(props) => props.theme.colors.text};
     transition: all 0.3s;
+
+    
   }
 `;
 
@@ -31,6 +35,7 @@ function App() {
         <Router>
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/about" element={<AboutUs />} />
           </Routes>
         </Router>
         <button onClick={() => setTheme(theme === lightTheme ? darkTheme : lightTheme)}>
