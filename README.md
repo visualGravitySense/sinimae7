@@ -1,3 +1,76 @@
+# 🏡 Housing Association Website  
+
+A modern and optimized web application for a **housing association** built with **React (Vite)** and **Firebase Authentication**. This project aims to provide residents with easy access to information, announcements, and online services.  
+
+## 🚀 Features  
+- **Authentication with Firebase** (Google Sign-In)  
+- **Dark/Light Theme Toggle** (Styled-Components)  
+- **State Management with Zustand**  
+- **React Query for Data Fetching**  
+- **Routing with React Router**  
+- **Progressive Web App (PWA) support**  
+- **Optimized Performance with Vite**  
+
+## 🔧 Tech Stack  
+- **Frontend:** React (Vite), TypeScript, Styled-Components  
+- **State Management:** Zustand  
+- **Authentication:** Firebase Auth (Google Sign-In)  
+- **Data Fetching:** React Query  
+- **Routing:** React Router  
+- **Deployment:** Vercel / Firebase Hosting  
+
+## 📌 Installation & Setup  
+1. Clone the repository:  
+   ```bash
+   git clone https://github.com/yourusername/sinimae7.git
+   cd sinimae7
+   ```
+2. Install dependencies:  
+   ```bash
+   npm install
+   ```
+3. Create a `.env` file and add your **Firebase configuration**:  
+   ```env
+   VITE_FIREBASE_API_KEY=your_api_key
+   VITE_FIREBASE_AUTH_DOMAIN=your_auth_domain
+   VITE_FIREBASE_PROJECT_ID=your_project_id
+   ```
+4. Start the development server:  
+   ```bash
+   npm run dev
+   ```
+
+## 🔑 Authentication  
+The app uses **Google Sign-In via Firebase Authentication**.  
+Users can log in without manual registration – Firebase automatically creates their account.  
+
+## 📂 Project Structure  
+```
+/src
+  /components  # Reusable UI components
+  /pages       # Main pages (Home, Dashboard, etc.)
+  /store       # Zustand state management
+  /styles      # Global styles and themes
+  firebase.ts  # Firebase configuration
+  main.tsx     # Root entry point
+```
+
+## 📅 Next Steps  
+- 🔹 Add Firestore database for storing user data  
+- 🔹 Implement role-based access (resident/admin)  
+- 🔹 Create a dashboard for announcements and documents  
+
+## 🎉 Contributing  
+Feel free to fork the repo, submit PRs, or suggest improvements! 🚀  
+
+---
+
+Let me know if you'd like to tweak anything! 😎
+
+
+---
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
