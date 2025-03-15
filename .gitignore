@@ -25,5 +25,5 @@ dist-ssr
 
 
 # Ignore file with credentials for Firebase
-firebase.ts
-db_import.ts
+src/firebase.ts
+src/utils/db_import.ts
