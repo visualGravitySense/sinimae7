@@ -63,9 +63,6 @@ Users can log in without manual registration – Firebase automatically creates 
 ## 🎉 Contributing  
 Feel free to fork the repo, submit PRs, or suggest improvements! 🚀  
 
----
-
-Let me know if you'd like to tweak anything! 😎
 
 
 ---
